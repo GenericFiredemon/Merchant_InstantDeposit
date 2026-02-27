@@ -258,7 +258,7 @@ class BountyThinker : Thinker abstract
 
 		if (Target.Health <= 0)
 		{
-			Target.A_StartSound("Bounty/HelloILikeMoney", 10, CHANF_OVERLAP, attenuation: 0.5);
+			Target.A_StartSound("Bounty/Claim", 10, CHANF_OVERLAP, attenuation: 0.5);
 
 			int amt = AceCore.GiveToPlayers('MercenaryBucks', GetBounty());
 			string amtMsg = "\c[Green]$"..amt.."\c- have been deposited into your account.";
